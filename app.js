@@ -20,8 +20,8 @@ app.set('view engine', 'ejs') // Set the template engine as ejs
 app.set('views', path.join(__dirname, 'views')) // Set the views directory
  
 // ENDPOINTS
-app.get('/index.html', function(req, res) {
-    res.sendFile( __dirname + "/views/index.html" ); 
+app.get('/home.html', function(req, res) {
+    res.sendFile( __dirname + "/views/home.html" ); 
 });
 app.get('/About.html', function(req, res) {
     res.sendFile( __dirname + "/views/About.html" ); 
